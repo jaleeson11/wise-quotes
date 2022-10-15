@@ -1,0 +1,15 @@
+a {
+	color: $color__dark-grey;
+	display: inline-block;
+	text-decoration: none;
+
+	&:visited {
+		color: $color__dark-grey;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__dark-grey;
+	}
+}

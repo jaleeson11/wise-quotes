@@ -1,0 +1,30 @@
+#quote {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 1s;
+	width: 80%;
+
+	&.quote--fade-out {
+		opacity: 0;
+	}
+
+	&.quote--fade-in {
+		opacity: 1;
+	}
+}
+
+#refreshButton {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	img {
+		width: 40px;
+	}
+}
