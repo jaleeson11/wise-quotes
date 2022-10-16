@@ -17,7 +17,20 @@ export default {
   name: 'Home',
   data() {
 	return {
-		keywords: ['love', 'life', 'anxiety', 'happiness', 'fear', 'failure', 'inspiration']
+		keywords: [
+			'love',
+			'life',
+			'happiness',
+			'fear',
+			'failure',
+			'inspiration',
+			'pain',
+			'past',
+			'courage',
+			'forgiveness',
+			'kindness',
+			'change'
+		]
 	}
   }
 }
