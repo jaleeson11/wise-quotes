@@ -17,7 +17,7 @@ export default {
 			quotes: [],
 			randomIndex: 0,
 			keyword: '',
-			apiUrl: 'https://zenquotes.io/api/quotes/8b89127121ee1b71a8abea23ec59560b9756773c&keyword='
+			apiUrl: 'https://zenquotes.io/api/quotes/87760ffa56466064fb19913cb8a5ca7e7dc08a07&keyword='
 		}
 	},
 	created() {
