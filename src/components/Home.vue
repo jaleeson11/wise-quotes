@@ -1,9 +1,8 @@
 <template>
 	<div>
 		<section id="intro">
-			<p>Inspiring quotes have the power to give us perspective in times of difficulty and provide us with insight into what we're going through in life.</p>
+			<p>Quotes have the power to motivate, encourage, and inspire. They can provide us with wisdom and insight into the true nature of what we're experiencing in life. And perhaps most importantly they can light the way in times of diffculty. To find a quote that resonates with your circumstances or how your're feeling, choose a keyword from the list below:</p>
 		</section>
-		<h3>What keyword best describes how you're feeling?</h3>
 		<section id="keywords">
 			<router-link v-for="(keyword, index) in keywords" :key="index" :to="{ name: 'quote', params: { keyword: keyword } }" class="keyword">
 				<span>{{ keyword }}</span>
