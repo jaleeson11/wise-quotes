@@ -21,8 +21,9 @@
 
 		span {
 			display: block;
-			font-size: 1.5rem;
-			text-transform: capitalize;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			letter-spacing: 5px;
 		}
 	}
 }
@@ -41,10 +42,6 @@
 	#keywords .keyword {
 		height: 150px;
 		line-height: 150px;
-
-		span {
-			font-size: 1.75rem;
-		}
 	}
 }
 
