@@ -1,24 +1,22 @@
-# wise-quotes
+Wise Quotes
+===
 
-## Project setup
+> A simple [Vue.js](https://vuejs.org/) application for finding inspirational quotes. 
+
+## Requirements
+
+- [Node.js](https://nodejs.org/)
+
+## Setup
+
+Install the necessary Node.js dependencies to run the application.
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Available CLI Commands
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- `npm run serve` : Compiles and hot-reloads for development
+- `npm run build` : Compiles and minifies for production
+- `npm run lint` : Lints and fixes files
+- `npm run deploy` : Deploys project to Github Pages
