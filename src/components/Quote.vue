@@ -81,7 +81,7 @@ export default {
 			});
 
 			return '<a href="https://twitter.com/intent/' +
-			tweetQuery + '" target="_blank">Tweet</a>';
+			tweetQuery + '" target="_blank"></a>';
 		}
 	}
 }

@@ -13,6 +13,21 @@
 	&.quote--fade-in {
 		opacity: 1;
 	}
+
+	a {
+		display: block;
+
+		&:before {
+			content: '';
+			background-image: url('assets/images/twitter.svg');
+			background-repeat: no-repeat;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
 
 #refreshButton {
