@@ -49,14 +49,14 @@ export default {
 			quote.classList.add('quote--fade-out');
 
 			setTimeout(() => {
-				this.getQuote();
+				this.shuffleQuote();
 				quote.classList.remove('quote--fade-out');
 				quote.classList.add('quote--fade-in');
 			}, 2000);
 		},
-		getQuote() {
+		shuffleQuote() {
 			const newIndex = Math.floor(Math.random() * this.quotes.length);
-			this.randomIndex !== newIndex ? this.randomIndex = newIndex : this.getQuote();
+			this.randomIndex !== newIndex ? this.randomIndex = newIndex : this.shuffleQuote();
 		},
 		buildTweetLink(quote) {
 			let tweetQuery = 'tweet?text=';
