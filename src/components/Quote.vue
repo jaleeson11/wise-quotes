@@ -33,7 +33,13 @@ export default {
 	},
 	computed: {
 		quote() {
-			return this.quotes.length ? this.quotes[this.randomIndex].h : '';
+			if (this.quotes.length) {
+				const quote = this.quotes[this.randomIndex];
+				quote.h = quote.h.concat(this.buildTweetLink(quote));
+				return quote.h;
+			}
+
+			return '';
 		}
 	},
 	methods: {
@@ -51,6 +57,31 @@ export default {
 		getQuote() {
 			const newIndex = Math.floor(Math.random() * this.quotes.length);
 			this.randomIndex !== newIndex ? this.randomIndex = newIndex : this.getQuote();
+		},
+		buildTweetLink(quote) {
+			let tweetQuery = 'tweet?text=';
+
+			const words = quote.q.split(' ');
+			words.forEach((word, index) => {
+				if (index == 0) {
+					tweetQuery = tweetQuery.concat('%22', word);
+					return;
+				}
+
+				tweetQuery = tweetQuery.concat('+', word);
+
+				if (index == words.length - 1) {
+					tweetQuery = tweetQuery.concat('%22');
+				}
+			});
+
+			tweetQuery = tweetQuery.concat('+', '-');
+			quote.a.split(' ').forEach((name) => {
+				tweetQuery = tweetQuery.concat('+', name);
+			});
+
+			return '<a href="https://twitter.com/intent/' +
+			tweetQuery + '" target="_blank">Tweet</a>';
 		}
 	}
 }
